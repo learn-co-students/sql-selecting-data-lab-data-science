@@ -19,7 +19,6 @@ class TestSQLSelectingData(unittest.TestCase):
         result = [('Mercury', 'gray'), ('Venus', 'yellow'), ('Earth', 'blue'), ('Mars', 'red'), ('Jupiter', 'orange'), ('Saturn', 'hazel'), ('Uranus', 'light blue'), ('Neptune', 'dark blue')]
         self.assertEqual(table.execute(select_name_and_color_of_all_planets()).fetchall(), result)
 
-
     def test_select_all_planets_with_mass_greater_than_one(self):
         result = [(5, 'Jupiter', 'orange', 67, 317.9, 0.0), (6, 'Saturn', 'hazel', 62, 95.19, 1.0), (7, 'Uranus', 'light blue', 27, 14.54, 1.0), (8, 'Neptune', 'dark blue', 14, 17.15, 1.0)]
         self.assertEqual(table.execute(select_all_planets_with_mass_greater_than_one()).fetchall(), result)
