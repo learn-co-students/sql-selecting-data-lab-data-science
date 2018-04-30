@@ -24,7 +24,7 @@ We will query from the same `planets` table featured in the Solar System lab.  T
 
 ## Queries
 
-Write you queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, make sure each function returns a string containing the correct query.
+Write you queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, add the correct query to the empty string returned by each function.
 
 * `select_all_columns_and_rows` should return all of the data featured in the `planets` table
 
