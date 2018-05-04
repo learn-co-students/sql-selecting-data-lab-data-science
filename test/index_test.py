@@ -1,5 +1,7 @@
 import unittest
 from sql_runner import SQLRunner
+import sys
+sys.path.insert(0, '..')
 from select import *
 
 sql_runner = SQLRunner()
