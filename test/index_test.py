@@ -10,9 +10,6 @@ table = sql_runner.execute_seed_file()
 
 class TestSQLSelectingData(unittest.TestCase):
 
-    file = open("../select.py", "r")
-    file.read()
-
     def test_select_all_columns_and_rows(self):
         result = [(1, 'Mercury', 'gray', 0, 0.55, 0.0), (2, 'Venus', 'yellow', 0, 0.82, 0.0), (3, 'Earth', 'blue', 1, 1.0, 0.0), (4, 'Mars', 'red', 2, 0.11, 0.0), (5, 'Jupiter', 'orange', 67, 317.9, 0.0), (6, 'Saturn', 'hazel', 62, 95.19, 1.0), (7, 'Uranus', 'light blue', 27, 14.54, 1.0), (8, 'Neptune', 'dark blue', 14, 17.15, 1.0)]
         self.assertEqual(table.execute(select_all_columns_and_rows()).fetchall(), result)
