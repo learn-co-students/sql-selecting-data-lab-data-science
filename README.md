@@ -24,7 +24,7 @@ We will query from the same `planets` table featured in the Solar System lab.  T
 
 ## Queries
 
-Write you queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, add the correct query to the empty string returned by each function.
+Write your queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, add the correct query to the empty string returned by each function.
 
 * `select_all_columns_and_rows` should return all of the data featured in the `planets` table
 
@@ -40,3 +40,7 @@ Write you queries inside the `select.py` file.  To get the tests in `test/index_
 * `select_all_planets_with_moons_and_mass_less_than_one` should return the planet that has at least one moon and a mass less than 1.00
 
 * `select_name_and_color_of_all_blue_planets` should return the name and color of planets that have a color of blue, light blue, or dark blue
+
+## Summary
+
+Great work! In this lab we practiced writing select statements that query a single table to get specific information as long as it meets the condition we provided. 
