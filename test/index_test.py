@@ -2,7 +2,7 @@ import unittest
 from sql_runner import SQLRunner
 import sys
 sys.path.insert(0, '..')
-from select import *
+from selects import *
 
 
 sql_runner = SQLRunner()
