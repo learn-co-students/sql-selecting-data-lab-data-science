@@ -1,7 +1,8 @@
 
 # Selecting Data Lab
 
-In this lab, we will practice querying a database with various `SELECT` statements.
+## Introduction
+In this lab, we will practice querying a database with various `SELECT` statements. We will select different columns, and employ other SQL clauses like `WHERE` to return the data we would like.
 
 ## Objectives
 
@@ -9,7 +10,7 @@ In this lab, we will practice querying a database with various `SELECT` statemen
 2.  Use `SELECT` with specific `column_name(s)` to pull only certain columns from a table
 3.  Use `WHERE` and conditionals to pull more specific information from a table
 
-We will query from the same `planets` table featured in the Solar System lab.  The `planets` table is created in the `create.sql` file and already is seeded with data from the `seed.sql` file.  The relevant information is provided in the table below:
+We will be querying data from the `planets` table we see below, which is also featured in the Solar System lab. The `planets` table is created in the `create.sql` file and already seeded with data from the `seed.sql` file. The table's data and structure is provided below:
 
 |name   |color |num_of_moons|mass|rings|
 |-------|-------|-------|-------|-------|
@@ -22,9 +23,14 @@ We will query from the same `planets` table featured in the Solar System lab.  T
 |Uranus |light blue|27  |14.54  |yes    |
 |Neptune|dark blue|14   |17.15  |yes    |
 
-## Queries
+## Instructions
 
-Write your queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, add the correct query to the empty string returned by each function.
+Write your queries inside the `sql_selects.py` file.  To get the tests in `test/index_test.py` to pass, add the correct SQL query to the empty string returned in each function. See the example below.
+
+```python
+def select_example_func():
+    return "SQL SELECT STATEMENT GOES HERE"
+```
 
 * `select_all_columns_and_rows` should return all of the data featured in the `planets` table
 
@@ -43,4 +49,4 @@ Write your queries inside the `select.py` file.  To get the tests in `test/index
 
 ## Summary
 
-Great work! In this lab we practiced writing select statements that query a single table to get specific information as long as it meets the condition we provided. 
+Great work! In this lab we practiced writing select statements that query a single table to get specific information and used other clauses and specified column names to cherry pick the data we wanted to retrieve. 
