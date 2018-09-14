@@ -25,12 +25,16 @@ We will be querying data from the `planets` table we see below, which is also fe
 
 ## Instructions
 
+<<<<<<< HEAD
 Write your queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, add the correct SQL query to the empty string returned in each function. See the example below.
 
 ```python
 def select_example_func():
     return "SQL SELECT STATEMENT GOES HERE"
 ```
+=======
+Write your queries inside the `select.py` file.  To get the tests in `test/index_test.py` to pass, add the correct query to the empty string returned by each function.
+>>>>>>> solution
 
 * `select_all_columns_and_rows` should return all of the data featured in the `planets` table
 
@@ -49,4 +53,8 @@ def select_example_func():
 
 ## Summary
 
+<<<<<<< HEAD
 Great work! In this lab we practiced writing select statements that query a single table to get specific information and used other clauses and specified column names to cherry pick the data we wanted to retrieve. 
+=======
+Great work! In this lab we practiced writing select statements that query a single table to get specific information as long as it meets the condition we provided. 
+>>>>>>> solution
